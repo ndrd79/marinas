@@ -216,14 +216,115 @@ html {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-bg {
-        min-height: 500px;
+        min-height: 450px;
     }
 
     h1 {
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
     }
 
     h2 {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Reduce section padding on mobile */
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    /* Reduce horizontal padding */
+    .px-6 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Service cards - reduce padding */
+    .group.flex.flex-col.gap-6.p-8 {
+        padding: 1.25rem !important;
+    }
+
+    /* Reduce gap between cards */
+    .grid.gap-8 {
+        gap: 1rem !important;
+    }
+
+    /* Smaller buttons on mobile */
+    .gold-button {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        height: 2.75rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Footer padding to avoid WhatsApp button overlap */
+    footer {
+        padding-bottom: 5rem !important;
+    }
+
+    /* Reduce text size slightly */
+    .text-lg {
+        font-size: 1rem !important;
+    }
+
+    /* CTA section - smaller padding */
+    .py-24 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .py-20 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    /* Mobile menu items - better touch targets */
+    #mobileMenu a {
+        padding: 0.75rem 0 !important;
+    }
+
+    /* Destination list - better spacing */
+    .flex.items-center.gap-3 {
+        gap: 0.5rem !important;
+    }
+
+    /* Gallery - single column */
+    .grid.grid-cols-2.md\\:grid-cols-4.gap-2 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        height: auto !important;
+    }
+
+    .grid.grid-cols-2.md\\:grid-cols-4.gap-2>div {
+        height: 150px !important;
+    }
+
+    /* Hero description text */
+    .hero-description {
+        font-size: 0.9rem !important;
+    }
+
+    /* Numbers section */
+    .text-5xl {
+        font-size: 2.5rem !important;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.75rem !important;
+    }
+
+    h2 {
+        font-size: 1.25rem !important;
+    }
+
+    .hero-bg {
+        min-height: 400px;
     }
 }
