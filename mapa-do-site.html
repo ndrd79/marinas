@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mapa do Site | Marina Premium</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: { extend: { colors: { "primary": "#081e2b", "gold-accent": "#B89B5E", "off-white": "#FAFAFA", "background-dark": "#081F2D", "graphite": "#1c2a33" }, fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] } } }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-background-dark text-off-white font-display">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header class="fixed top-0 z-50 w-full backdrop-blur-md border-b border-white/10 bg-background-dark/80">
+            <div class="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4 lg:px-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gold-accent !text-3xl">sailing</span>
+                    <h2 class="text-off-white text-xl font-extrabold">MARINA PREMIUM</h2>
+                </a>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="index.html">Home</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="servicos.html">Serviços</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white" href="sobre.html">A
+                        Marina</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="contato.html">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex flex-col flex-1 mt-[76px]">
+            <section class="mx-auto max-w-[1000px] w-full px-6 py-16">
+                <div class="mb-12 text-center">
+                    <span class="text-gold-accent text-xs font-bold uppercase tracking-[0.3em]">Navegação</span>
+                    <h1 class="text-4xl font-extrabold text-white mt-4">Mapa do <span
+                            class="text-gold-accent">Site</span></h1>
+                    <p class="text-off-white/60 mt-4">Encontre rapidamente o que procura</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Principal -->
+                    <div class="bg-graphite p-6 rounded-xl border border-white/5">
+                        <h2 class="text-lg font-bold text-gold-accent mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined">home</span> Principal
+                        </h2>
+                        <ul class="space-y-3">
+                            <li><a href="index.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Home</a></li>
+                            <li><a href="sobre.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">A Marina</a></li>
+                            <li><a href="galeria.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Galeria</a></li>
+                            <li><a href="contato.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Serviços -->
+                    <div class="bg-graphite p-6 rounded-xl border border-white/5">
+                        <h2 class="text-lg font-bold text-gold-accent mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined">sailing</span> Serviços
+                        </h2>
+                        <ul class="space-y-3">
+                            <li><a href="servicos.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Todos os
+                                    Serviços</a></li>
+                            <li><a href="servicos.html#mensalista"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Mensalista</a>
+                            </li>
+                            <li><a href="servicos.html#rampa"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Serviço de
+                                    Rampa</a></li>
+                            <li><a href="servicos.html#lanchas"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Aluguel de
+                                    Lanchas</a></li>
+                            <li><a href="servicos.html#jetski"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Aluguel de Jet
+                                    Ski</a></li>
+                            <li><a href="servicos.html#manutencao"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Manutenção</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div class="bg-graphite p-6 rounded-xl border border-white/5">
+                        <h2 class="text-lg font-bold text-gold-accent mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined">gavel</span> Legal
+                        </h2>
+                        <ul class="space-y-3">
+                            <li><a href="privacidade.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Política de
+                                    Privacidade</a></li>
+                            <li><a href="termos.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Termos de
+                                    Serviço</a></li>
+                            <li><a href="transparencia.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Transparência</a>
+                            </li>
+                            <li><a href="mapa-do-site.html"
+                                    class="text-off-white/70 hover:text-gold-accent transition-colors">Mapa do Site</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contato Rápido -->
+                <div class="mt-12 bg-graphite p-8 rounded-xl border border-white/5 text-center">
+                    <h2 class="text-xl font-bold text-off-white mb-4">Precisa de Ajuda?</h2>
+                    <p class="text-off-white/60 mb-6">Entre em contato conosco</p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="tel:+5541999999999" class="flex items-center gap-2 text-gold-accent">
+                            <span class="material-symbols-outlined">call</span> +55 (41) 99999-9999
+                        </a>
+                        <a href="mailto:contato@marinapremium.com.br" class="flex items-center gap-2 text-gold-accent">
+                            <span class="material-symbols-outlined">mail</span> contato@marinapremium.com.br
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-background-dark border-t border-white/5 py-12">
+            <div class="mx-auto max-w-[1280px] px-6 text-center text-xs text-off-white/20">
+                © 2026 Marina Premium Paranaense. Todos os direitos reservados.
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

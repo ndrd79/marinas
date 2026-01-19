@@ -1,0 +1,229 @@
+/* Marina Premium - Custom Styles */
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Gold Button */
+.gold-button {
+    background-color: #B89B5E;
+    color: #081F2D;
+    transition: all 0.3s ease;
+}
+
+.gold-button:hover {
+    background-color: #d1b47a;
+    transform: translateY(-2px);
+}
+
+/* Navigation Link Underline Effect */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #B89B5E;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Scroll Animation Classes */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero Background */
+.hero-bg {
+    background-image: linear-gradient(rgba(8, 30, 43, 0.7) 0%, rgba(8, 31, 45, 0.85) 100%),
+        url("https://lh3.googleusercontent.com/aida-public/AB6AXuASkCDAOhABpU3y81J_lLT8txeMc4X9glaT8B-Ht34aR9fUq9ga7AU_dAgbdMi2EIdzRZNbhoePFlwkwjHUzyaoxxCFn-SqTGbWlgmcG0azz2OX46SX7qtdVONCDBvWmnclDPRpG8JmiZR9pcTsCu9CbyudcqSPvefwFXN3rQmunYuALLKGpzZrOat1UlrBHjlBMiSL02ucxyVkNzwHKu8qi4-ff50mD59chddVv29dM0SQWtbGi-JZMjsz1kk0qZ8ewdfLEky1mOk");
+}
+
+/* Section Images */
+.marina-img {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp6c4Fk3sLjP6shfnA5s43ORcjfs6K8CYqcQP9uh5i2GGBdilJCSw-YS1zRbrp9-rvTsb0uoNjg-8Ggww4jQAPFBCRbHJHmd7IWd_yM8ymZI0ZUXYW9sx_FLE3-hxNoDVx0bWplNC-NEBOeRrG-9CDj9uWBeQKfVO65d0LBtTTe6qCQtl_mnHnR3rqpWO2DTlfRolAXw0IEoC3M5mEcUpaXiwlj6poY8Dc5R0_zD0aW2NQK_elz-qo1gPYGHB082wbQZEmHuWwtNk");
+}
+
+/* Service Images */
+.service-img-1 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCf4_I6yxs5Wt4vawub0zGOIDA83-eZZGPgPDiprRiSeqji6qfm_pUHWEHQEoT8ID7uoey9PcT5udS0iHmUnkkmLRqq5BHFcnZIREITdnDIbNvv0cZ6LZnhKFnrtmweubTkFEGmgxXTQYBS1dyDMLxyrwa8lZx08GCNBois6XItMK8pzR_eW7ICUYYuabmbpFbIL-jpnbAROF2qryER85RSZUnvVQ9gfVPwfq5Gs-sSP3TcLPTJzNTqLXjiHNdvStoSo5SVfSWVSqk");
+}
+
+.service-img-2 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdUcnKtr34ByGxs00GkpOHYZOGBsOzsJz8Oh-S_SBFtrVJ7lY2NL0PpnCSFwOUbH_496c7mve8fAQ5KciNJmQ4nVZOVcQvbUko1tF1tLF9pwwse7pS9eqmwTD5p3AxU7VZUV9yQSikWpKTKmVSyN0BBnCsnDmIe4WBVmWAfuZNwfd_jZAR2iIgaoNMPpt8zigoVmUUy7wfpp6RIK6ZrjeJALgFnAwGmQYMLkioI_vC_EIrQxLj0Qua2H0yYcKC-tktWdbh7COj85g");
+}
+
+.service-img-3 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaUfgIBNEyGY4OaRtvPcAUA0rtoqtSztijUvOYFTScOy4UkqT69rGog899balLgAv_8cSECzjRkBi0w2VwpY-qnwPjeyWO_0uRsftrXPV_Einh7BjK-NU0rXrEkcmycIJd5WrE98Vy6S-3_WXOw1QKFLFnyqY803SRH354A2hIoLgszXsvXlVowzy0rMs9BRkH6fBKmNOLTgi3gZU-1OpELFgypgYYdzx2HkgZ0t-163k9BkjSnAUSk5E-bGLPnyUUTFfzuqMSW3o");
+}
+
+.service-img-4 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBs7A2PFVQRiwVvc2NELPRJTXEl_3q92TJoRUORGHnYwihzQ5AxTaawLB4bVaQOlwW7b4yzjZUW7DKpir-sIAeUH_vCothKAd_BH2ldGvikCeDElIdHXanCcHJo5m3oXnHzDDjLKmxKVg_zLKdZERHnviMqTu08pULIUScw8c_6TVFbbRN8TwDLxLOWD5lMcrDj3n_c5I2bg8QUmslxym3Fm9nzqPMqEuplUBblSmbRfH2l-vo6ThUr8ZqUYd4frVEEGMqgxeExXwo");
+}
+
+.service-img-5 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdJqUndaJr4kPqh0dajfAM-ipa1EToSctcqGw3QrzsZqLhGRB7O7Vb7GBO_Cvn8_lds6d_tzhmquxE-g7S_is4Gg8OEOhpaXdvuZFrumvD97z46vP3fCQ9iDa8D2bgeSWmWiQNmdNhtlluokkPUeqPeVsIgnyNxcTsKTwG9DEPVVZAtggl1OSu7pLlXS8slHU4UVbd4SGv2c_QkPEdX2VAeOgd-H9BgbWIDH8RYOVUWEC9asfW1YYhj3EXgu3-lRwVEcEcydJQuKM");
+}
+
+/* Destination Images */
+.dest-img-1 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBWskRSnDYDl36k7wNMXCgqXhIByi0YsngAx0OPk4WBVlqhMfeEQqG2wcedI1jFEC6qgeiKhM7xz4hWMUPpvIvaRqnGjSp9ZBp6rpiTzHnzJ3x2l4fCJGx_bUvVda9y5fCmxomIefJ2RH0fV4dAK2CqeJB0djsKhkSIFmVR9a60fcwwydnqVzp614pVfEzEl-mxSt0Z2LP2Qlenwiy162u6vMZCAk7YOTgobHv-D6GRqiei9_uQa5ZmaQhn9LHw1Vuh7WrE1kvvor0");
+}
+
+.dest-img-2 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkbF9X3u8WYIIV8OsEjfCarDc63Q-9nRCBhG4PDB6jaknrZ3CdKIEEYL9J8lSH-6O-IaPGXuStnHiptci_OnWtBqE1Fbo6egUHzyyq3NCrchxXhAOgpDFZSyQYIsKmC2Z3mguIrEDsT74TTWu7f04_j1ovt0dQH5rD8DzRYhc6USU2U-9gBP8VDG7Sgb9E7w66bvytueRikLEjYqdeMOUn51stbzMyo5Wpu5qq-BA7HLmAMmJ-I_fnX9n1IeIH8qyunFeGkqaRaME");
+}
+
+/* Gallery Images */
+.gallery-img-1 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuiv9XWgTlRrkdz1wUPzDrpG5hRPNpZiqmAt2_lDUTzOCNJZu8vQ_xgUp7XJIYCYhPaGz_3ncxLYqTl0u-AGDUjabyQWz1i3NmmxM7ysVEHxnjbgELwJsSYtqcsFcaZuTGUMmL5eRCtXs_YkAcwZD7nujthYPLd1fn3gWwUTshZuxMUIrmZ6923H4OHsXlW1ne-mGgw8rnmCiUicehBe94upIP7bgmoNBACEVlS9ueMaHEUuhO-TBg846XGhV1q5ThJgJejQdtyX0");
+}
+
+.gallery-img-2 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdA5GCsosNauvKUrGOHcMOjPGtENibQWgqspmEyuVUUoqmhk4Ov9LceWxotyF2SZlddxVaIM7ihkXxc7_k99rY4cY6tcOL7BW2_AulsUNXIDXicdLxhOJqYr3vw5QNTroOcCLCh-q8l8zkrdCiSAF3F1dJT62AEoLoixyyRnPJANtrt6rvcPjzncCC0SslCAClXnzvGFo1rD5T2Y2CTJQcZOn1jGgC8ioArDRpqjP-IHHPR6LK2XmR4_df9vdP0kccbYo_of5u5wk");
+}
+
+.gallery-img-3 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNvmvXGuLRkwn05fOsb8_fT3Ti1hs-Uyn84K5xcuAo81iK1XaqmjsRfZ8MODxSJuwpOC8N002Ehw2cQH_OJBYY3L3rtOKZuoA0DJ3wIOhWqj3aZv_s9fpq-NVmt1CUPweVwb-Y7zEGRK2Gbkf1mIGO06koI7bSwhMziu44vBjmxRSjXbKQ_FJoJXxg9D2Ac9S9oy-cdf8QDAPDO3ihmJApR37mof4HbSc1gKh_52zbEpwm1_fTlg4KRVec-jELdkkL5zgG6yz0x6o");
+}
+
+.gallery-img-4 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJli2Ox3XbGRThK16w8EoUNzmlJ7LNmSQA_Erldbud5g94Oju4xgL2TkdB0l-u8UlUfK48XFMFGx11VSA-jy1uPYa4cty418obDu1q2jQ8F-dyYfXUIfSI1s9GzPsa10M-PwEIfYeGJEyOitgDGlQhnlTn_PSX7N-3k_Zqa7O7_QTrnfALFLOst7g2ad0DX_2FUawkrtfPKLOIseP5DUPZ2_kyDYMmZGkcI0c6uhmBT-C96CgxxTL8WFDAA6DS6w6YKR42iZ19ArM");
+}
+
+/* About Page Hero */
+.about-hero-bg {
+    background-image: linear-gradient(rgba(8, 30, 43, 0.85) 0%, rgba(8, 31, 45, 0.95) 100%),
+        url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp6c4Fk3sLjP6shfnA5s43ORcjfs6K8CYqcQP9uh5i2GGBdilJCSw-YS1zRbrp9-rvTsb0uoNjg-8Ggww4jQAPFBCRbHJHmd7IWd_yM8ymZI0ZUXYW9sx_FLE3-hxNoDVx0bWplNC-NEBOeRrG-9CDj9uWBeQKfVO65d0LBtTTe6qCQtl_mnHnR3rqpWO2DTlfRolAXw0IEoC3M5mEcUpaXiwlj6poY8Dc5R0_zD0aW2NQK_elz-qo1gPYGHB082wbQZEmHuWwtNk");
+}
+
+/* Services Page Hero */
+.services-hero-bg {
+    background-image: linear-gradient(rgba(8, 30, 43, 0.8), rgba(18, 27, 32, 0.9)),
+        url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtLYkhaDybwPC8KiMWUzcqt3aaAWmkQK-XOgfDxBpLXkopy7tCYmEwRi0bKytUvNPi9rnkr2oOymlJEkQr4gpNCgqh6QMx_p2ITtA-nFgU5p0F7j6tHgkscIkHv1hvXKPtHVClw0PRHPiGxDfILGH7ONGo1y1Sl7A-uVLdkG4khLT953m7AW1Xjh3tDr4ObFpQTIQCgKki3ghZrTmilDi09nwh8Xd_5oxDIMdbRB0kGqrQNhTWkjpCX05OYovt6wrFJH9U4IVvNM8");
+}
+
+/* Form Styles */
+.form-input {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #B89B5E;
+    box-shadow: 0 0 0 3px rgba(184, 155, 94, 0.2);
+}
+
+.form-input::placeholder {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lightbox-close:hover {
+    color: #B89B5E;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Card Hover Effects */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-bg {
+        min-height: 500px;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+}

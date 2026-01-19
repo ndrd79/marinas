@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Serviços | Marina Premium</title>
+    <meta name="description"
+        content="Conheça nossos serviços: Mensalista, Rampa, Aluguel de Lanchas e Jet Skis, Manutenção especializada de embarcações." />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#081e2b",
+                        "gold-accent": "#B89B5E",
+                        "off-white": "#FAFAFA",
+                        "background-dark": "#081F2D",
+                        "graphite": "#1c2a33",
+                    },
+                    fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-background-dark text-off-white font-display">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+        <!-- Navigation Bar -->
+        <header class="fixed top-0 z-50 w-full backdrop-blur-md border-b border-white/10 bg-background-dark/80">
+            <div class="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4 lg:px-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gold-accent !text-3xl">sailing</span>
+                    <h2 class="text-off-white text-xl font-extrabold leading-tight tracking-tight">MARINA PREMIUM</h2>
+                </a>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="index.html">Home</a>
+                    <a class="nav-link text-gold-accent text-sm font-medium" href="servicos.html">Serviços</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white" href="sobre.html">A
+                        Marina</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="galeria.html">Galeria</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="contato.html">Contato</a>
+                </nav>
+                <button
+                    class="hidden sm:flex gold-button min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-11 px-5 text-sm font-bold tracking-wide">RESERVAR
+                    AGORA</button>
+                <button id="menuBtn" class="md:hidden flex items-center justify-center size-10 text-off-white">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <nav id="mobileMenu" class="hidden md:hidden bg-background-dark border-t border-white/10">
+                <div class="flex flex-col px-6 py-4 gap-4">
+                    <a class="text-off-white/80 text-sm font-medium py-2" href="index.html">Home</a>
+                    <a class="text-gold-accent text-sm font-medium py-2" href="servicos.html">Serviços</a>
+                    <a class="text-off-white/80 text-sm font-medium py-2" href="sobre.html">A Marina</a>
+                    <a class="text-off-white/80 text-sm font-medium py-2" href="galeria.html">Galeria</a>
+                    <a class="text-off-white/80 text-sm font-medium py-2" href="contato.html">Contato</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex flex-col flex-1 mt-[76px]">
+
+            <!-- Hero Section -->
+            <section class="relative w-full">
+                <div class="mx-auto max-w-[1280px] p-6">
+                    <div
+                        class="relative flex min-h-[350px] flex-col items-center justify-center overflow-hidden rounded-xl bg-cover bg-center p-8 text-center services-hero-bg">
+                        <div class="max-w-3xl space-y-4">
+                            <span class="text-gold-accent text-xs font-bold uppercase tracking-[0.3em]">Excelência
+                                Marítima</span>
+                            <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl">
+                                Serviços <span class="text-gold-accent">Premium</span>
+                            </h1>
+                            <p class="mx-auto max-w-xl text-base text-gray-300">
+                                Soluções completas para sua embarcação e lazer náutico com o mais alto padrão.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="w-full py-16">
+                <div class="mx-auto max-w-[1280px] px-6 lg:px-20">
+
+                    <!-- Mensalista -->
+                    <div id="mensalista" class="grid lg:grid-cols-2 gap-12 items-center mb-20 scroll-mt-24">
+                        <div class="h-80 rounded-2xl bg-cover bg-center service-img-1 shadow-2xl"></div>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-gold-accent !text-4xl">anchor</span>
+                                <h2 class="text-3xl font-bold text-off-white">Mensalista</h2>
+                            </div>
+                            <p class="text-off-white/70 text-lg leading-relaxed">
+                                Garanta a vaga ideal para sua embarcação com nosso plano mensalista. Oferecemos vagas
+                                cobertas e descobertas, com monitoramento 24 horas, fornecimento de energia e água, além
+                                de acesso exclusivo ao nosso VIP Lounge.
+                            </p>
+                            <ul class="space-y-3 text-off-white/60">
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Monitoramento por câmeras 24h
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Energia e água inclusos
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Limpeza periódica da embarcação
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Acesso ao VIP Lounge
+                                </li>
+                            </ul>
+                            <a href="contato.html"
+                                class="gold-button inline-flex max-w-fit items-center justify-center rounded-lg h-12 px-8 text-sm font-bold tracking-wide">
+                                CONSULTAR DISPONIBILIDADE
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Rampa -->
+                    <div id="rampa" class="grid lg:grid-cols-2 gap-12 items-center mb-20 scroll-mt-24">
+                        <div class="flex flex-col gap-6 lg:order-1">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-gold-accent !text-4xl">precision_manufacturing</span>
+                                <h2 class="text-3xl font-bold text-off-white">Serviço de Rampa</h2>
+                            </div>
+                            <p class="text-off-white/70 text-lg leading-relaxed">
+                                Lançamento e retirada ágil com equipamentos de última geração. Nossa equipe altamente
+                                treinada garante a integridade do casco e a segurança total da operação.
+                            </p>
+                            <ul class="space-y-3 text-off-white/60">
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Trator e carretas especializadas
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Equipe treinada e certificada
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Agendamento flexível
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Valores competitivos
+                                </li>
+                            </ul>
+                            <a href="contato.html"
+                                class="gold-button inline-flex max-w-fit items-center justify-center rounded-lg h-12 px-8 text-sm font-bold tracking-wide">
+                                SOLICITAR ORÇAMENTO
+                            </a>
+                        </div>
+                        <div class="h-80 rounded-2xl bg-cover bg-center service-img-2 shadow-2xl lg:order-2"></div>
+                    </div>
+
+                    <!-- Aluguel de Lanchas -->
+                    <div id="lanchas" class="grid lg:grid-cols-2 gap-12 items-center mb-20 scroll-mt-24">
+                        <div class="h-80 rounded-2xl bg-cover bg-center service-img-3 shadow-2xl"></div>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-gold-accent !text-4xl">directions_boat</span>
+                                <h2 class="text-3xl font-bold text-off-white">Aluguel de Lanchas</h2>
+                            </div>
+                            <p class="text-off-white/70 text-lg leading-relaxed">
+                                Explore a Ilha do Mel, Ilha das Peças e as baías vizinhas com nossa frota de lanchas
+                                premium. Disponibilizamos marinheiros experientes e serviço de bordo opcional para uma
+                                experiência inesquecível.
+                            </p>
+                            <ul class="space-y-3 text-off-white/60">
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Frota moderna e revisada
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Marinheiros qualificados
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Serviço de bordo opcional
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Roteiros personalizados
+                                </li>
+                            </ul>
+                            <a href="contato.html"
+                                class="gold-button inline-flex max-w-fit items-center justify-center rounded-lg h-12 px-8 text-sm font-bold tracking-wide">
+                                VER CATÁLOGO
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Aluguel de Jet Ski -->
+                    <div id="jetski" class="grid lg:grid-cols-2 gap-12 items-center mb-20 scroll-mt-24">
+                        <div class="flex flex-col gap-6 lg:order-1">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-gold-accent !text-4xl">surfing</span>
+                                <h2 class="text-3xl font-bold text-off-white">Aluguel de Jet Ski</h2>
+                            </div>
+                            <p class="text-off-white/70 text-lg leading-relaxed">
+                                Alta performance e diversão garantida com os modelos mais recentes do mercado. Todos os
+                                equipamentos de segurança estão inclusos, além de orientação completa para iniciantes.
+                            </p>
+                            <ul class="space-y-3 text-off-white/60">
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Modelos de última geração
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Colete salva-vidas incluso
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Instruções para iniciantes
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Aluguel por hora ou dia
+                                </li>
+                            </ul>
+                            <a href="contato.html"
+                                class="gold-button inline-flex max-w-fit items-center justify-center rounded-lg h-12 px-8 text-sm font-bold tracking-wide">
+                                RESERVAR AGORA
+                            </a>
+                        </div>
+                        <div class="h-80 rounded-2xl bg-cover bg-center service-img-4 shadow-2xl lg:order-2"></div>
+                    </div>
+
+                    <!-- Manutenção -->
+                    <div id="manutencao" class="grid lg:grid-cols-2 gap-12 items-center scroll-mt-24">
+                        <div class="h-80 rounded-2xl bg-cover bg-center service-img-5 shadow-2xl"></div>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-gold-accent !text-4xl">build</span>
+                                <h2 class="text-3xl font-bold text-off-white">Manutenção e Revisão</h2>
+                            </div>
+                            <p class="text-off-white/70 text-lg leading-relaxed">
+                                Oficina especializada para motores de popa e centro-rabeta. Realizamos revisões
+                                preventivas, manutenções corretivas e serviços de polimento e estética náutica.
+                            </p>
+                            <ul class="space-y-3 text-off-white/60">
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Mecânicos especializados
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Peças originais garantidas
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Revisões preventivas
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-gold-accent text-sm">check_circle</span>
+                                    Polimento e estética náutica
+                                </li>
+                            </ul>
+                            <a href="contato.html"
+                                class="gold-button inline-flex max-w-fit items-center justify-center rounded-lg h-12 px-8 text-sm font-bold tracking-wide">
+                                SOLICITAR ORÇAMENTO
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="py-20 bg-gold-accent">
+                <div class="mx-auto max-w-[1280px] px-6 text-center">
+                    <h2 class="text-primary text-3xl font-black mb-4 uppercase tracking-tight">Não encontrou o que
+                        procura?</h2>
+                    <p class="text-primary/80 text-lg font-medium mb-8 max-w-2xl mx-auto">
+                        Oferecemos serviços customizados para atender às suas necessidades específicas. Entre em contato
+                        conosco.
+                    </p>
+                    <a href="contato.html"
+                        class="bg-primary text-off-white hover:bg-primary/90 inline-flex items-center justify-center rounded-lg h-14 px-10 text-base font-bold uppercase tracking-widest transition-all shadow-xl">
+                        FALAR COM CONSULTOR
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-background-dark border-t border-white/5 py-12">
+            <div class="mx-auto max-w-[1280px] px-6 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-gold-accent">sailing</span>
+                        <h2 class="text-off-white text-lg font-bold">MARINA PREMIUM</h2>
+                    </div>
+                    <p class="text-off-white/40 text-sm leading-relaxed">
+                        Excelência em infraestrutura náutica na Baía de Paranaguá.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4 class="text-off-white font-bold">Navegação</h4>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors"
+                        href="index.html">Home</a>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors"
+                        href="servicos.html">Serviços</a>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors" href="sobre.html">A
+                        Marina</a>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors"
+                        href="contato.html">Contato</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4 class="text-off-white font-bold">Serviços</h4>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors"
+                        href="#mensalista">Mensalista</a>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors"
+                        href="#rampa">Rampa</a>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors"
+                        href="#lanchas">Aluguel de Lanchas</a>
+                    <a class="text-off-white/40 text-sm hover:text-gold-accent transition-colors" href="#jetski">Aluguel
+                        de Jet Ski</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4 class="text-off-white font-bold">Contato</h4>
+                    <p class="text-off-white/40 text-sm">Estrada da Marina, 1200 - Paranaguá/PR</p>
+                    <p class="text-off-white/40 text-sm">+55 (41) 99999-9999</p>
+                    <p class="text-off-white/40 text-sm">contato@marinapremium.com.br</p>
+                </div>
+            </div>
+            <div
+                class="mx-auto max-w-[1280px] px-6 mt-12 pt-6 border-t border-white/5 text-center text-xs text-off-white/20">
+                © 2026 Marina Premium Paranaense. Todos os direitos reservados.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5541999999999?text=Olá! Gostaria de saber mais sobre os serviços da Marina Premium."
+        target="_blank"
+        class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-all hover:scale-110">
+        <svg class="size-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

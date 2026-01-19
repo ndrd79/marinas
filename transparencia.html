@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Transparência | Marina Premium</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: { extend: { colors: { "primary": "#081e2b", "gold-accent": "#B89B5E", "off-white": "#FAFAFA", "background-dark": "#081F2D", "graphite": "#1c2a33" }, fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"] } } }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-background-dark text-off-white font-display">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header class="fixed top-0 z-50 w-full backdrop-blur-md border-b border-white/10 bg-background-dark/80">
+            <div class="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4 lg:px-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-gold-accent !text-3xl">sailing</span>
+                    <h2 class="text-off-white text-xl font-extrabold">MARINA PREMIUM</h2>
+                </a>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="index.html">Home</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="servicos.html">Serviços</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white" href="sobre.html">A
+                        Marina</a>
+                    <a class="nav-link text-off-white/80 text-sm font-medium hover:text-off-white"
+                        href="contato.html">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="flex flex-col flex-1 mt-[76px]">
+            <section class="mx-auto max-w-[900px] w-full px-6 py-16">
+                <div class="mb-12">
+                    <span class="text-gold-accent text-xs font-bold uppercase tracking-[0.3em]">Compromisso</span>
+                    <h1 class="text-4xl font-extrabold text-white mt-4">Política de <span
+                            class="text-gold-accent">Transparência</span></h1>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-graphite p-6 rounded-xl border border-white/5">
+                        <h2 class="text-xl font-bold text-gold-accent mb-4">Nossa Missão</h2>
+                        <p class="text-off-white/70">A Marina Premium acredita que a transparência é fundamental para
+                            construir relacionamentos duradouros baseados na confiança.</p>
+                    </div>
+
+                    <div class="bg-graphite p-6 rounded-xl border border-white/5">
+                        <h2 class="text-xl font-bold text-gold-accent mb-4">Princípios</h2>
+                        <ul class="text-off-white/70 space-y-2">
+                            <li>✓ Honestidade em todas as comunicações</li>
+                            <li>✓ Preços claros sem taxas ocultas</li>
+                            <li>✓ Contratos em linguagem acessível</li>
+                            <li>✓ Atendimento responsivo</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-graphite p-6 rounded-xl border border-white/5">
+                        <h2 class="text-xl font-bold text-gold-accent mb-4">Responsabilidade Ambiental</h2>
+                        <ul class="text-off-white/70 space-y-2">
+                            <li>✓ Gestão adequada de resíduos</li>
+                            <li>✓ Produtos biodegradáveis</li>
+                            <li>✓ Apoio à conservação marinha</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-graphite p-6 rounded-xl border border-white/5">
+                        <h2 class="text-xl font-bold text-gold-accent mb-4">Canal de Denúncias</h2>
+                        <p class="text-off-white/70">E-mail: etica@marinapremium.com.br<br>As denúncias podem ser
+                            anônimas.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-background-dark border-t border-white/5 py-12">
+            <div class="mx-auto max-w-[1280px] px-6 text-center text-xs text-off-white/20">
+                © 2026 Marina Premium Paranaense. Todos os direitos reservados.
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
